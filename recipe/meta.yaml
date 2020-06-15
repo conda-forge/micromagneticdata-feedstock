@@ -1,20 +1,19 @@
 {% set name = "micromagneticdata" %}
-{% set version = "0.12" %}
-{% set sha256 = "010a38a63ff3ca6db32399d45c94c5b66591afac4c49ff9b3d4fb959e1f30b80" %}
+{% set version = "0.3" %}
+{% set sha256 = "95b25497e0b9cbe3eda58923276813eafac2da3f36d2ecfec7faf5ba4a8defa0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
   noarch: python
   number: 0
-  script: pip install --no-deps .
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   build:
@@ -22,38 +21,25 @@ requirements:
     - pip
   run:
     - python >=3.6
-    - discretisedfield
-    - oommfodt
-    - ipywidgets
+    - discretisedfield ==0.8.12
+    - ubermagtable ==0.1.11
 
 test:
   imports:
     - micromagneticdata
-    - micromagneticdata.tests
-
   commands:
-    - python -c "import sys; import micromagneticdata as m; sys.exit(m.test())"
-
+    - python -c "import sys; import micromagneticdata as md; sys.exit(md.test())"
 
 about:
-  home: http://joommf.github.io/
-  license: BSD 3-clause
-  summary: Python tools for analysing micromagnetic data in a Jupyter notebook.
+  home: http://ubermag.github.io/
+  license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
-
-  description: |
-    micromagneticdata is a Python package that provides the analysis
-    of micromagnetic data. It is available on all major operating
-    systems (Windows, MacOS, Linux) and requires Python 3.6 or higher.
-
+  summary: Python package for the analysis of micromagnetic data.
   doc_url: http://micromagneticdata.readthedocs.io
-  dev_url: https://github.com/joommf/micromagneticdata
+  dev_url: https://github.com/ubermag/micromagneticdata
 
 extra:
   recipe-maintainers:
     - marijanbeg
     - fangohr
-    - sergii-mamedov
-    - takluyver
-    - rpep
