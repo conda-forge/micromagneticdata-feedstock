@@ -1,28 +1,28 @@
-<!--
-# -*- mode: jinja -*-
--->
-
 About micromagneticdata
 =======================
 
-Home: http://joommf.github.io/
+Home: http://ubermag.github.io/
 
-Package license: BSD 3-clause
+Package license: BSD-3-Clause
 
 Feedstock license: BSD 3-Clause
 
-Summary: Python tools for analysing micromagnetic data in a Jupyter notebook.
+Summary: Python package for the analysis of micromagnetic data.
 
-micromagneticdata is a Python package that provides the analysis
-of micromagnetic data. It is available on all major operating
-systems (Windows, MacOS, Linux) and requires Python 3.6 or higher.
 
 
 Current build status
 ====================
 
-All platforms:
-[![noarch](https://img.shields.io/circleci/project/github/conda-forge/micromagneticdata-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/micromagneticdata-feedstock)
+
+<table><tr><td>All platforms:</td>
+    <td>
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6134&branchName=master">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/micromagneticdata-feedstock?branchName=master">
+      </a>
+    </td>
+  </tr>
+</table>
 
 Current release info
 ====================
@@ -67,7 +67,7 @@ A feedstock is made up of a conda recipe (the instructions on what and how to bu
 the package) and the necessary configurations for automatic building using freely
 available continuous integration services. Thanks to the awesome service provided by
 [CircleCI](https://circleci.com/), [AppVeyor](https://www.appveyor.com/)
-and [TravisCI](https://travis-ci.org/) it is possible to build and upload installable
+and [TravisCI](https://travis-ci.com/) it is possible to build and upload installable
 packages to the [conda-forge](https://anaconda.org/conda-forge)
 [Anaconda-Cloud](https://anaconda.org/) channel for Linux, Windows and OSX respectively.
 
@@ -118,7 +118,4 @@ Feedstock Maintainers
 
 * [@fangohr](https://github.com/fangohr/)
 * [@marijanbeg](https://github.com/marijanbeg/)
-* [@rpep](https://github.com/rpep/)
-* [@sergii-mamedov](https://github.com/sergii-mamedov/)
-* [@takluyver](https://github.com/takluyver/)
 
