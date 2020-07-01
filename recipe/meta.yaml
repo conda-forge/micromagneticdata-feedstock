@@ -1,6 +1,6 @@
 {% set name = "micromagneticdata" %}
-{% set version = "0.3" %}
-{% set sha256 = "95b25497e0b9cbe3eda58923276813eafac2da3f36d2ecfec7faf5ba4a8defa0" %}
+{% set version = "0.3.1" %}
+{% set sha256 = "fe62d5f9bc1e5fafbbced292ff746efc2680cc0437eb5df66ccd3156bb64a976" %}
 
 package:
   name: {{ name|lower }}
@@ -21,8 +21,8 @@ requirements:
     - pip
   run:
     - python >=3.6
-    - discretisedfield ==0.8.12
-    - ubermagtable ==0.1.11
+    - discretisedfield ==0.8.13
+    - ubermagtable ==0.1.12
 
 test:
   imports:
