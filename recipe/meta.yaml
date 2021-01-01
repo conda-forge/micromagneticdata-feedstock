@@ -1,6 +1,5 @@
 {% set name = "micromagneticdata" %}
 {% set version = "0.3.2" %}
-{% set sha256 = "51f75295cea22e50f4760c3b7d3e906539da4a8b6aac2d5adb095440a4e8b947" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  sha256: 51f75295cea22e50f4760c3b7d3e906539da4a8b6aac2d5adb095440a4e8b947
 
 build:
   noarch: python
@@ -17,25 +16,24 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.8
     - pip
   run:
-    - python >=3.6
-    - discretisedfield ==0.8.13
-    - ubermagtable ==0.1.12
-
+    - python >=3.8
+    - discretisedfield ==0.8.18
+    - ubermagtable ==0.3
 test:
   imports:
     - micromagneticdata
   commands:
-    - python -c "import sys; import micromagneticdata as md; sys.exit(md.test())"
+    - python -c "import sys; import micromagneticdata; sys.exit(micromagneticdata.test())"
 
 about:
   home: http://ubermag.github.io/
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
-  summary: Python package for the analysis of micromagnetic data.
+  summary: Python tools for the analysis of computational magnetism data.
   doc_url: http://micromagneticdata.readthedocs.io
   dev_url: https://github.com/ubermag/micromagneticdata
 
@@ -43,3 +41,4 @@ extra:
   recipe-maintainers:
     - marijanbeg
     - fangohr
+    - lang-m
