@@ -5,11 +5,13 @@ Home: http://ubermag.github.io/
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/micromagneticdata-feedstock/blob/master/LICENSE.txt)
 
 Summary: Python package for the analysis of micromagnetic data.
 
+Development: https://github.com/ubermag/micromagneticdata
 
+Documentation: http://micromagneticdata.readthedocs.io
 
 Current build status
 ====================
