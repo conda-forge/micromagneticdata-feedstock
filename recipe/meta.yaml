@@ -20,7 +20,7 @@ requirements:
     - pip
   run:
     - python >=3.8
-    - discretisedfield ==0.8.18
+    - discretisedfield ==0.8.15
     - ubermagtable ==0.3
 test:
   imports:
