@@ -11,7 +11,7 @@ Summary: Python tools for the analysis of computational magnetism data.
 
 Development: https://github.com/ubermag/micromagneticdata
 
-Documentation: http://micromagneticdata.readthedocs.io
+Documentation: https://ubermag.github.io/documentation/micromagneticdata.html
 
 Current build status
 ====================
@@ -122,4 +122,5 @@ Feedstock Maintainers
 * [@fangohr](https://github.com/fangohr/)
 * [@lang-m](https://github.com/lang-m/)
 * [@marijanbeg](https://github.com/marijanbeg/)
+* [@samjrholt](https://github.com/samjrholt/)
 
