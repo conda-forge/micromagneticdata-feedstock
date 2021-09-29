@@ -20,8 +20,8 @@ requirements:
     - pip
   run:
     - python >=3.8
-    - discretisedfield ==0.11.1
-    - ubermagtable ==0.6.1
+    - discretisedfield >=0.60.0,<0.61.0
+    - ubermagtable >=0.60.0,<0.61.0
 test:
   imports:
     - micromagneticdata
@@ -34,7 +34,7 @@ about:
   license_family: BSD
   license_file: LICENSE
   summary: Python tools for the analysis of computational magnetism data.
-  doc_url: http://micromagneticdata.readthedocs.io
+  doc_url: https://ubermag.github.io/documentation/micromagneticdata.html
   dev_url: https://github.com/ubermag/micromagneticdata
 
 extra:
@@ -42,3 +42,4 @@ extra:
     - marijanbeg
     - fangohr
     - lang-m
+    - samjrholt
