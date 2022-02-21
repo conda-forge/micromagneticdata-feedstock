@@ -20,8 +20,8 @@ requirements:
     - pip
   run:
     - python >=3.8
-    - discretisedfield >=0.60.0,<0.61.0
-    - ubermagtable >=0.60.0,<0.61.0
+    - discretisedfield >=0.61.0,<0.62.0
+    - ubermagtable >=0.61.0,<0.62.0
 test:
   imports:
     - micromagneticdata
@@ -43,3 +43,4 @@ extra:
     - fangohr
     - lang-m
     - samjrholt
+    - swapneelap
