@@ -1,5 +1,5 @@
 {% set name = "micromagneticdata" %}
-{% set version = "0.63.0" %}
+{% set version = "0.64.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: eb248c570fdd6f2e4cfc39da185b3653bbcd5f53163671b598d9b3d30da61bc0
+  sha256: e047595c97e0100f6ea633bd40328926c624511a1e6fe1e757f32121a6cbd289
 
 build:
   noarch: python
@@ -20,7 +20,7 @@ requirements:
     - pip
   run:
     - python >=3.8
-    - discretisedfield >=0.63.0
+    - discretisedfield >=0.64.0
     - ubermagtable >=0.61.1
 test:
   imports:
